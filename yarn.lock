@@ -80,14 +80,14 @@
   "resolved" "https://registry.npmjs.org/@emotion/hash/-/hash-0.8.0.tgz"
   "version" "0.8.0"
 
-"@es-joy/jsdoccomment@0.10.8":
-  "integrity" "sha512-3P1JiGL4xaR9PoTKUHa2N/LKwa2/eUdRqGwijMWWgBqbFEqJUVpmaOi2TcjcemrsRMgFLBzQCK4ToPhrSVDiFQ=="
-  "resolved" "https://registry.npmjs.org/@es-joy/jsdoccomment/-/jsdoccomment-0.10.8.tgz"
-  "version" "0.10.8"
+"@es-joy/jsdoccomment@~0.22.1":
+  "integrity" "sha512-pM6WQKcuAtdYoqCsXSvVSu3Ij8K0HY50L8tIheOKHDl0wH1uA4zbP88etY8SIeP16NVCMCTFU+Q2DahSKheGGQ=="
+  "resolved" "https://registry.npmjs.org/@es-joy/jsdoccomment/-/jsdoccomment-0.22.2.tgz"
+  "version" "0.22.2"
   dependencies:
-    "comment-parser" "1.2.4"
+    "comment-parser" "1.3.1"
     "esquery" "^1.4.0"
-    "jsdoc-type-pratt-parser" "1.1.1"
+    "jsdoc-type-pratt-parser" "~2.2.5"
 
 "@eslint/eslintrc@^0.4.3":
   "integrity" "sha512-J6KFFz5QCYUJq3pf0mjEcCJVERbzv71PUIDczuh9JkwGEzced6CO5ADLHB1rbf/+oPBtoPfMYNOpGDzCANlbXw=="
@@ -1657,10 +1657,10 @@
   "resolved" "https://registry.npmjs.org/commander/-/commander-6.0.0.tgz"
   "version" "6.0.0"
 
-"comment-parser@1.2.4":
-  "integrity" "sha512-pm0b+qv+CkWNriSTMsfnjChF9kH0kxz55y44Wo5le9qLxMj5xDQAaEd9ZN1ovSuk9CsrncWaFwgpOMg7ClJwkw=="
-  "resolved" "https://registry.npmjs.org/comment-parser/-/comment-parser-1.2.4.tgz"
-  "version" "1.2.4"
+"comment-parser@1.3.1":
+  "integrity" "sha512-B52sN2VNghyq5ofvUsqZjmk6YkihBX5vMSChmSK9v4ShjKf3Vk5Xcmgpw4o+iIgtrnM/u5FiMpz9VKb8lpBveA=="
+  "resolved" "https://registry.npmjs.org/comment-parser/-/comment-parser-1.3.1.tgz"
+  "version" "1.3.1"
 
 "commondir@^1.0.1":
   "integrity" "sha1-3dgA2gxmEnOTzKWVDqloo6rxJTs="
@@ -1881,10 +1881,10 @@
   dependencies:
     "ms" "2.0.0"
 
-"debug@^4.0.1", "debug@^4.1.1", "debug@^4.3.1", "debug@^4.3.2":
-  "integrity" "sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw=="
-  "resolved" "https://registry.npmjs.org/debug/-/debug-4.3.2.tgz"
-  "version" "4.3.2"
+"debug@^4.0.1", "debug@^4.1.1", "debug@^4.3.1", "debug@^4.3.2", "debug@^4.3.4":
+  "integrity" "sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ=="
+  "resolved" "https://registry.npmjs.org/debug/-/debug-4.3.4.tgz"
+  "version" "4.3.4"
   dependencies:
     "ms" "2.1.2"
 
@@ -2320,17 +2320,16 @@
     "debug" "^2.6.9"
     "resolve" "^1.13.1"
 
-"eslint-plugin-jsdoc@^36.0.0":
-  "integrity" "sha512-nuLDvH1EJaKx0PCa9oeQIxH6pACIhZd1gkalTUxZbaxxwokjs7TplqY0Q8Ew3CoZaf5aowm0g/Z3JGHCatt+gQ=="
-  "resolved" "https://registry.npmjs.org/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-36.1.1.tgz"
-  "version" "36.1.1"
+"eslint-plugin-jsdoc@^38.1.6":
+  "integrity" "sha512-n4s95oYlg0L43Bs8C0dkzIldxYf8pLCutC/tCbjIdF7VDiobuzPI+HZn9Q0BvgOvgPNgh5n7CSStql25HUG4Tw=="
+  "resolved" "https://registry.npmjs.org/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-38.1.6.tgz"
+  "version" "38.1.6"
   dependencies:
-    "@es-joy/jsdoccomment" "0.10.8"
-    "comment-parser" "1.2.4"
-    "debug" "^4.3.2"
+    "@es-joy/jsdoccomment" "~0.22.1"
+    "comment-parser" "1.3.1"
+    "debug" "^4.3.4"
+    "escape-string-regexp" "^4.0.0"
     "esquery" "^1.4.0"
-    "jsdoc-type-pratt-parser" "^1.1.1"
-    "lodash" "^4.17.21"
     "regextras" "^0.8.0"
     "semver" "^7.3.5"
     "spdx-expression-parse" "^3.0.1"
@@ -2399,7 +2398,7 @@
   "resolved" "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-2.1.0.tgz"
   "version" "2.1.0"
 
-"eslint@*", "eslint@^3 || ^4 || ^5 || ^6 || ^7 || ^8", "eslint@^5.0.0 || ^6.0.0 || ^7.0.0", "eslint@^6.0.0 || ^7.0.0", "eslint@^7.14.0", "eslint@>=3.14.1", "eslint@>=5", "eslint@>=5.0.0":
+"eslint@*", "eslint@^3 || ^4 || ^5 || ^6 || ^7 || ^8", "eslint@^5.0.0 || ^6.0.0 || ^7.0.0", "eslint@^7.0.0 || ^8.0.0", "eslint@^7.14.0", "eslint@>=3.14.1", "eslint@>=5", "eslint@>=5.0.0":
   "integrity" "sha512-VHZ8gX+EDfz+97jGcgyGCyRia/dPOd6Xh9yPv8Bl1+SoaIwD+a/vlrOmGRUyOYu7MwUhc7CxqeaDZU13S4+EpA=="
   "resolved" "https://registry.npmjs.org/eslint/-/eslint-7.32.0.tgz"
   "version" "7.32.0"
@@ -3455,15 +3454,10 @@
   "resolved" "https://registry.npmjs.org/jsbn/-/jsbn-0.1.1.tgz"
   "version" "0.1.1"
 
-"jsdoc-type-pratt-parser@^1.1.1":
-  "integrity" "sha512-4STjeF14jp4bqha44nKMY1OUI6d2/g6uclHWUCZ7B4DoLzaB5bmpTkQrpqU+vSVzMD0LsKAOskcnI3I3VfIpmg=="
-  "resolved" "https://registry.npmjs.org/jsdoc-type-pratt-parser/-/jsdoc-type-pratt-parser-1.2.0.tgz"
-  "version" "1.2.0"
-
-"jsdoc-type-pratt-parser@1.1.1":
-  "integrity" "sha512-uelRmpghNwPBuZScwgBG/OzodaFk5RbO5xaivBdsAY70icWfShwZ7PCMO0x1zSkOa8T1FzHThmrdoyg/0AwV5g=="
-  "resolved" "https://registry.npmjs.org/jsdoc-type-pratt-parser/-/jsdoc-type-pratt-parser-1.1.1.tgz"
-  "version" "1.1.1"
+"jsdoc-type-pratt-parser@~2.2.5":
+  "integrity" "sha512-2a6eRxSxp1BW040hFvaJxhsCMI9lT8QB8t14t+NY5tC5rckIR0U9cr2tjOeaFirmEOy6MHvmJnY7zTBHq431Lw=="
+  "resolved" "https://registry.npmjs.org/jsdoc-type-pratt-parser/-/jsdoc-type-pratt-parser-2.2.5.tgz"
+  "version" "2.2.5"
 
 "jsdom@15.2.1":
   "integrity" "sha512-fAl1W0/7T2G5vURSyxBzrJ1LSdQn6Tr5UX/xD4PXDx/PDgwygedfW6El/KIj3xJ7FU61TTYnc/l/B7P49Eqt6g=="
@@ -3959,7 +3953,7 @@
   "resolved" "https://registry.npmjs.org/lodash.truncate/-/lodash.truncate-4.4.2.tgz"
   "version" "4.4.2"
 
-"lodash@^4.17.15", "lodash@^4.17.19", "lodash@^4.17.21", "lodash@^4.17.4", "lodash@4", "lodash@4.17.21":
+"lodash@^4.17.15", "lodash@^4.17.19", "lodash@^4.17.4", "lodash@4", "lodash@4.17.21":
   "integrity" "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
   "resolved" "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
   "version" "4.17.21"
