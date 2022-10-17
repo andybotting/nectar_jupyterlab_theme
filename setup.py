@@ -1,3 +1,6 @@
+"""
+jupyterlab_examples_signals setup
+"""
 import json
 import sys
 from pathlib import Path

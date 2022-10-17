@@ -30,9 +30,8 @@
   background-color: #000000;
   color: #9d9d9d;
   display: flex;
-  padding: 0px 4px;
+  padding: 0px 4px 0px 4px;
   align-items: center;
-  padding-right: 8px;
 }
 
 .nectar-header .nectar-header-left {
@@ -46,6 +45,7 @@
   display: flex;
   height: 100%;
   align-items: center;
+  padding-right: 8px;
 }
 
 .nectar-header .nectar-nav-item {
@@ -61,41 +61,24 @@
 }
 
 .nectar-header .nectar-nav-item a:hover {
-  color: #fff;
+  color: #00ffff;
   transition: color .15s ease-in-out;
 }
 
-.nectar-header .nectar-avatar:hover {
+.nectar-header {
   background-color: #333;
   transition: background-color .15s ease-in-out;
 }
 
-.nectar-header .nectar-avatar:hover .nectar-avatar-text {
+.nectar-header {
   color: #fff;
   transition: color .15s ease-in-out;
 }
 
-.nectar-header .nectar-avatar {
+.nectar-header .nectar-username {
   display: flex;
   align-items: center;
 }
-.nectar-header .nectar-avatar-picture {
-  background: var(--nectar-color-purple);
-  margin-right: 4px;
-  height: 24px;
-  width: 24px;
-}
-.nectar-header .nectar-avatar-text {
+.nectar-header .nectar-username-text {
   padding: 0 4px;
-}
-
-/* .nectar-header-menu is not inside .nectar-header */
-.nectar-header-menu .MuiPaper-root {
-  border: 1px solid #e6e6e6;
-  border-top: 0;
-  color: black !important;
-}
-
-.nectar-header-menu .MuiList-padding {
-  padding: 0;
 }
