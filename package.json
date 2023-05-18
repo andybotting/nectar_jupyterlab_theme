@@ -1,15 +1,15 @@
 {
   "name": "@nectar/jupyterlab-theme",
   "version": "1.1.0",
-  "description": "Nectar JupyterLab theme",
+  "description": "ARDC Nectar JupyterLab theme",
   "keywords": [
     "jupyter",
     "jupyterlab",
     "jupyterlab-extension"
   ],
-  "homepage": "https://github.com/NeCTAR-RC/nectar_jupyterlab_theme",
+  "homepage": "https://github.com/NeCTAR-RC/nectar-jupyterlab-theme",
   "bugs": {
-    "url": "https://github.com/NeCTAR-RC/nectar_jupyterlab_theme/issues"
+    "url": "https://github.com/NeCTAR-RC/nectar-jupyterlab-theme/issues"
   },
   "license": "Apache-2.0",
   "author": {
@@ -25,7 +25,7 @@
   "style": "style/index.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NeCTAR-RC/nectar_jupyterlab_theme.git"
+    "url": "https://github.com/NeCTAR-RC/nectar-jupyterlab-theme.git"
   },
   "scripts": {
     "build": "jlpm build:lib && jlpm build:labextension:dev",
@@ -39,16 +39,7 @@
     "clean:lintcache": "rimraf .eslintcache .stylelintcache",
     "clean:labextension": "rimraf nectar_jupyterlab_theme/labextension nectar_jupyterlab_theme/_version.py",
     "clean:all": "jlpm clean:lib && jlpm clean:labextension && jlpm clean:lintcache",
-    "eslint": "jlpm eslint:check --fix",
-    "eslint:check": "eslint . --cache --ext .ts,.tsx",
     "install:extension": "jlpm build",
-    "lint": "jlpm stylelint && jlpm prettier && jlpm eslint",
-    "lint:check": "jlpm stylelint:check && jlpm prettier:check && jlpm eslint:check",
-    "prettier": "jlpm prettier:base --write --list-different",
-    "prettier:base": "prettier \"**/*{.ts,.tsx,.js,.jsx,.css,.json,.md}\"",
-    "prettier:check": "jlpm prettier:base --check",
-    "stylelint": "jlpm stylelint:check --fix",
-    "stylelint:check": "stylelint --cache \"style/**/*.css\"",
     "watch": "run-p watch:src watch:labextension",
     "watch:src": "tsc -w",
     "watch:labextension": "jupyter labextension watch ."
@@ -60,23 +51,13 @@
     "@material-ui/icons": "^4.11.2"
   },
   "resolutions": {
+    "webpack": ">=5.61.0",
     "@types/react": "^17.0.19"
   },
   "devDependencies": {
     "@jupyterlab/builder": "^3.1.0",
-    "@typescript-eslint/eslint-plugin": "^4.8.1",
-    "@typescript-eslint/parser": "^4.8.1",
-    "eslint": "^7.14.0",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-prettier": "^3.1.4",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.1.1",
     "rimraf": "^3.0.2",
-    "stylelint": "^14.3.0",
-    "stylelint-config-prettier": "^9.0.4",
-    "stylelint-config-recommended": "^6.0.0",
-    "stylelint-config-standard": "~24.0.0",
-    "stylelint-prettier": "^2.0.0",
     "typescript": "~4.1.3"
   },
   "sideEffects": [
@@ -90,86 +71,6 @@
     "extension": true,
     "outputDir": "nectar_jupyterlab_theme/labextension",
     "themePath": "style/index.css"
-  },
-  "eslintIgnore": [
-    "node_modules",
-    "dist",
-    "coverage",
-    "**/*.d.ts"
-  ],
-  "eslintConfig": {
-    "extends": [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/eslint-recommended",
-      "plugin:@typescript-eslint/recommended",
-      "plugin:prettier/recommended"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-      "project": "tsconfig.json",
-      "sourceType": "module"
-    },
-    "plugins": [
-      "@typescript-eslint"
-    ],
-    "rules": {
-      "@typescript-eslint/naming-convention": [
-        "error",
-        {
-          "selector": "interface",
-          "format": [
-            "PascalCase"
-          ],
-          "custom": {
-            "regex": "^I[A-Z]",
-            "match": true
-          }
-        }
-      ],
-      "@typescript-eslint/no-unused-vars": [
-        "warn",
-        {
-          "args": "none"
-        }
-      ],
-      "@typescript-eslint/no-explicit-any": "off",
-      "@typescript-eslint/no-namespace": "off",
-      "@typescript-eslint/no-use-before-define": "off",
-      "@typescript-eslint/quotes": [
-        "error",
-        "single",
-        {
-          "avoidEscape": true,
-          "allowTemplateLiterals": false
-        }
-      ],
-      "curly": [
-        "error",
-        "all"
-      ],
-      "eqeqeq": "error",
-      "prefer-arrow-callback": "error"
-    }
-  },
-  "prettier": {
-    "singleQuote": true,
-    "trailingComma": "none",
-    "arrowParens": "avoid",
-    "endOfLine": "auto"
-  },
-  "stylelint": {
-    "extends": [
-      "stylelint-config-recommended",
-      "stylelint-config-standard",
-      "stylelint-prettier/recommended"
-    ],
-    "rules": {
-      "property-no-vendor-prefix": null,
-      "selector-no-vendor-prefix": null,
-      "value-no-vendor-prefix": null,
-      "alpha-value-notation": null,
-      "color-function-notation": null
-    }
   },
   "styleModule": "style/index.js"
 }
